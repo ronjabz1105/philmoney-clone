@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620824275968",
+    "project_id": "philmoney-db",
+    "storage_bucket": "philmoney-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620824275968:android:6172fcff0f2a03591f7ce5",
+        "android_client_info": {
+          "package_name": "com.example.philmoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620824275968-p88vb4k25vg4qru90adgv35jgiehng3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYi2v-AWsurSLhNt7x_5SJdEDREEVbwts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620824275968-p88vb4k25vg4qru90adgv35jgiehng3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

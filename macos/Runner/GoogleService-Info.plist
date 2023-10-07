@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>620824275968-8gusfmnloa2rhtsdo7mt4u19vb2ma0u9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.620824275968-8gusfmnloa2rhtsdo7mt4u19vb2ma0u9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBR58Ole6O9JlUC4P-viXKAyQ9pk0O0_2U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>620824275968</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.philmoney</string>
+	<key>PROJECT_ID</key>
+	<string>philmoney-db</string>
+	<key>STORAGE_BUCKET</key>
+	<string>philmoney-db.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:620824275968:ios:e45bc1c9f4eadcd41f7ce5</string>
+</dict>
+</plist>

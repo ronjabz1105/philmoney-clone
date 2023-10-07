@@ -1,0 +1,523 @@
+ 
+ 
+ //// ADD new remitance /////////////////////
+ //const SizedBox(height: 30),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   children: [
+                        //     const SizedBox(
+                        //         width: 100,
+                        //         child: Text(
+                        //           "Purpose of \n Remittance",
+                        //           textAlign: TextAlign.end,
+                        //         )),
+                        //     //const SizedBox(width: 10),
+                        //     SizedBox(
+                        //       height: 40,
+                        //       width: 250,
+                        //       child: TextFormField(
+                        //         onTap: () {
+                        //           _selectPurpose();
+                        //         },
+                        //         controller: controller.purposeController,
+                        //         readOnly: true,
+                        //         textAlign: TextAlign.center,
+                        //         decoration: InputDecoration(
+                        //           enabledBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.borderText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           focusedBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.borderText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           hintText: "Select Purpose",
+                        //           // label: Text("Select Receiver",
+                        //           //     style: TextStyle(
+                        //           //         fontSize: 16,
+                        //           //         fontWeight: FontWeight.normal,
+                        //           //         color: AppColors.primaryElement)),
+                        //           fillColor: AppColors.thirdElementText,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
+                        //const SizedBox(height: 20),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   crossAxisAlignment: CrossAxisAlignment.center,
+                        //   children: [
+                        //     const SizedBox(
+                        //       width: 10,
+                        //     ),
+                        //     const Text(
+                        //       "Currency \n",
+                        //       textAlign: TextAlign.end,
+                        //     ),
+                        //     // const SizedBox(width: 10),
+                        //     Column(
+                        //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        //       crossAxisAlignment: CrossAxisAlignment.center,
+                        //       children: [
+                        //         SizedBox(
+                        //           height: 40,
+                        //           width: 250,
+                        //           child: TextFormField(
+                        //             onTap: () {},
+                        //             controller: controller.currencyController,
+                        //             readOnly: true,
+                        //             textAlign: TextAlign.center,
+                        //             decoration: InputDecoration(
+                        //               enabledBorder: OutlineInputBorder(
+                        //                   borderSide: const BorderSide(
+                        //                       color: AppColors.borderText),
+                        //                   borderRadius:
+                        //                       BorderRadius.circular(5)),
+                        //               focusedBorder: OutlineInputBorder(
+                        //                   borderSide: const BorderSide(
+                        //                       color: AppColors.borderText),
+                        //                   borderRadius:
+                        //                       BorderRadius.circular(5)),
+                        //               hintText: "PHP",
+                        //               fillColor: AppColors.thirdElementText,
+                        //             ),
+                        //           ),
+                        //         ),
+                        //         const SizedBox(height: 10),
+                        //         const Text(
+                        //           '1NTD = 1.784PHP',
+                        //           style: TextStyle(
+                        //             color: AppColors.primaryElement,
+                        //             fontSize: 12,
+                        //           ),
+                        //         )
+                        //       ],
+                        //     ),
+                        //   ],
+                        // ),
+                        // const SizedBox(height: 20),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   children: [
+                        //     const SizedBox(
+                        //         width: 100,
+                        //         child: Text(
+                        //           "Amount to \n Send",
+                        //           textAlign: TextAlign.end,
+                        //         )),
+                        //     //const SizedBox(width: 10),
+                        //     SizedBox(
+                        //       height: 40,
+                        //       width: 250,
+                        //       child: TextFormField(
+                        //         onTap: () {},
+                        //         controller: controller.amountSendController,
+                        //         //readOnly: true,
+                        //         // textAlign: TextAlign.center,
+
+                        //         textAlign: TextAlign.right,
+                        //         keyboardType: TextInputType.number,
+                        //         onChanged: (value) {
+                        //           controller.updateAmountReceiveValue(value);
+                        //         },
+                        //         decoration: InputDecoration(
+                        //           enabledBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.borderText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           focusedBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.borderText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           hintText: "0",
+                        //           prefix: const Padding(
+                        //             padding: EdgeInsets.only(
+                        //               top: 8.0,
+                        //             ),
+                        //             child: Text(
+                        //               "NTD",
+                        //               style: TextStyle(
+                        //                   fontSize: 16,
+                        //                   color: AppColors.thirdElementText),
+                        //               textAlign: TextAlign.left,
+                        //             ),
+                        //           ),
+                        //           fillColor: AppColors.thirdElementText,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
+                        // const SizedBox(height: 10),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   children: [
+                        //     const SizedBox(
+                        //         width: 100,
+                        //         child: Text(
+                        //           "Amount to \n Receive",
+                        //           textAlign: TextAlign.end,
+                        //         )),
+                        //     //const SizedBox(width: 10),
+                        //     SizedBox(
+                        //       height: 40,
+                        //       width: 250,
+                        //       child: TextFormField(
+                        //         onTap: () {},
+                        //         controller: controller.amountReceiveController,
+                        //         //readOnly: true,
+                        //         textAlign: TextAlign.right,
+
+                        //         onChanged: (value) {
+                        //           controller.updateAmountSendValue(value);
+                        //         },
+                        //         keyboardType: TextInputType.number,
+                        //         decoration: InputDecoration(
+                        //           enabledBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.borderText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           focusedBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.borderText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           hintText: "PHP",
+                        //           fillColor: AppColors.thirdElementText,
+                        //           prefix: const Padding(
+                        //             padding: EdgeInsets.only(
+                        //               top: 8.0,
+                        //             ),
+                        //             child: Text(
+                        //               "NTD",
+                        //               style: TextStyle(
+                        //                   fontSize: 16,
+                        //                   color: AppColors.thirdElementText),
+                        //               textAlign: TextAlign.left,
+                        //             ),
+                        //           ),
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
+                        // const SizedBox(height: 10),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   children: [
+                        //     const SizedBox(
+                        //         width: 100,
+                        //         child: Text(
+                        //           "Coupon \n ",
+                        //           textAlign: TextAlign.end,
+                        //         )),
+                        //     //const SizedBox(width: 10),
+                        //     SizedBox(
+                        //       height: 40,
+                        //       width: 250,
+                        //       child: TextFormField(
+                        //         readOnly: true,
+                        //         onTap: () {
+                        //           Get.toNamed(AppRoutes.COUPON);
+                        //         },
+                        //         controller: controller.couponController,
+                        //         decoration: InputDecoration(
+                        //           enabledBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.borderText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           focusedBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.borderText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           hintText: "Select Coupon",
+                        //           fillColor: AppColors.thirdElementText,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
+                        // const SizedBox(height: 10),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   children: [
+                        //     const SizedBox(
+                        //         width: 100,
+                        //         child: Text(
+                        //           "Discount \n ",
+                        //           textAlign: TextAlign.end,
+                        //         )),
+                        //     //const SizedBox(width: 10),
+                        //     SizedBox(
+                        //       height: 40,
+                        //       width: 250,
+                        //       child: TextFormField(
+                        //         onTap: () {},
+                        //         controller: controller.discountController,
+                        //         readOnly: true,
+                        //         // textAlign: TextAlign.center,
+                        //         decoration: InputDecoration(
+                        //           enabledBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.thirdElementText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           focusedBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.thirdElementText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           hintText: "NTD",
+                        //           fillColor: AppColors.thirdElementText,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
+                        // const SizedBox(height: 10),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   children: [
+                        //     const SizedBox(
+                        //         width: 100,
+                        //         child: Text(
+                        //           "Service Fee \n ",
+                        //           textAlign: TextAlign.end,
+                        //         )),
+                        //     //const SizedBox(width: 10),
+                        //     SizedBox(
+                        //       height: 40,
+                        //       width: 250,
+                        //       child: TextFormField(
+                        //         onTap: () {},
+                        //         controller: controller.serviceFeeController,
+                        //         readOnly: true,
+                        //         // textAlign: TextAlign.center,
+                        //         decoration: InputDecoration(
+                        //           enabledBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.thirdElementText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           focusedBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.thirdElementText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           hintText: "NTD",
+                        //           suffixIcon: const Padding(
+                        //             padding: EdgeInsets.only(
+                        //               top: 8.0,
+                        //             ),
+                        //             child: Text(
+                        //               "100",
+                        //               style: TextStyle(
+                        //                   fontSize: 16,
+                        //                   color: AppColors.thirdElementText),
+                        //               textAlign: TextAlign.center,
+                        //             ),
+                        //           ),
+                        //           fillColor: AppColors.thirdElementText,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
+                        // const SizedBox(height: 10),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   children: [
+                        //     const SizedBox(
+                        //         width: 100,
+                        //         child: Text(
+                        //           "Total \n Amount",
+                        //           textAlign: TextAlign.end,
+                        //         )),
+                        //     //const SizedBox(width: 10),
+                        //     SizedBox(
+                        //       height: 40,
+                        //       width: 250,
+                        //       child: TextFormField(
+                        //         onTap: () {},
+                        //         controller: controller.totalAmountController,
+                        //         readOnly: true,
+                        //         // textAlign: TextAlign.center,
+                        //         //enabled: false,
+                        //         decoration: InputDecoration(
+                        //           enabledBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.thirdElementText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           focusedBorder: OutlineInputBorder(
+                        //               borderSide: const BorderSide(
+                        //                   color: AppColors.thirdElementText),
+                        //               borderRadius: BorderRadius.circular(5)),
+                        //           hintText: "NTD",
+                        //           suffixIcon: const Padding(
+                        //             padding: EdgeInsets.only(
+                        //               top: 8.0,
+                        //             ),
+                        //             child: Text(
+                        //               'NTD',
+                        //               style: TextStyle(
+                        //                   fontSize: 16,
+                        //                   color: AppColors.thirdElementText),
+                        //               textAlign: TextAlign.left,
+                        //             ),
+                        //           ),
+                        //           fillColor: AppColors.thirdElementText,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
+
+
+
+
+ ///////  add new receiver //////////
+ 
+// Widget _buildbody(controller) {
+//   return Column(
+//     // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//     children: [
+//       Row(
+//         mainAxisAlignment: MainAxisAlignment.center,
+//         crossAxisAlignment: CrossAxisAlignment.center,
+//         children: [
+//           Container(
+//               height: 35,
+//               width: Get.width * 0.31,
+//               decoration: BoxDecoration(
+//                 borderRadius: const BorderRadius.only(
+//                     topLeft: Radius.circular(10),
+//                     bottomLeft: Radius.circular(10)),
+//                 border: Border.all(
+//                   width: 1.5,
+//                   color: AppColors.primaryBackground,
+//                 ),
+//                 color: controller.receiversOption.value != '1'
+//                     ? AppColors.submitButtonBlue
+//                     : AppColors.primaryElementText,
+//               ),
+//               child: Center(
+//                 child: Text(
+//                   "Bank to bank",
+//                   style: TextStyle(
+//                     color: controller.receiversOption.value != '1'
+//                         ? AppColors.primaryElementText
+//                         : AppColors.submitButtonBlue,
+//                   ),
+//                 ),
+//               )),
+//           Container(
+//               height: 35,
+//               // width: 120,
+//               width: Get.width * 0.31,
+//               decoration: BoxDecoration(
+//                   // borderRadius: BorderRadius.circular(5),
+//                   border: Border.all(
+//                     width: 1.5,
+//                     color: AppColors.primaryBackground,
+//                   ),
+//                   color: controller.receiversOption.value != '2'
+//                       ? AppColors.submitButtonBlue
+//                       : AppColors.primaryElementText
+//                   //color: Colors.white
+//                   ),
+//               child: Center(
+//                 child: Text(
+//                   "Pick up",
+//                   style: TextStyle(
+//                       color: controller.receiversOption.value != '2'
+//                           ? AppColors.primaryElementText
+//                           : AppColors.submitButtonBlue),
+//                 ),
+//               )),
+//           Container(
+//               height: 35,
+//               width: Get.width * 0.31,
+//               decoration: BoxDecoration(
+//                 borderRadius: const BorderRadius.only(
+//                     topRight: Radius.circular(10),
+//                     bottomRight: Radius.circular(10)),
+//                 border: Border.all(
+//                   width: 1.5,
+//                   color: AppColors.primaryBackground,
+//                 ),
+//                 color: controller.receiversOption.value != '3'
+//                     ? AppColors.submitButtonBlue
+//                     : AppColors.primaryElementText,
+//                 //color: Colors.white
+//               ),
+//               child: Center(
+//                 child: Text(
+//                   "Door to door",
+//                   style: TextStyle(
+//                       color: controller.receiversOption.value != '3'
+//                           ? AppColors.primaryElementText
+//                           : AppColors.submitButtonBlue),
+//                 ),
+//               )),
+//         ],
+//       ),
+//       const SizedBox(height: 20),
+//       Container(
+//         height: Get.height * 0.7,
+//         width: Get.width * 0.95,
+//         padding: const EdgeInsets.all(20),
+//         decoration: BoxDecoration(
+//             color: AppColors.primaryBackground,
+//             borderRadius: BorderRadius.circular(20)),
+//         child: SingleChildScrollView(
+//           child: Column(
+//             children: [
+//               _buildNoteText(
+//                   "*Pls. enter account information same with the passbook."),
+//               ReceiverTextField(
+//                 ontap: () {
+//                   Get.toNamed(AppRoutes.RELATIONSHIPLIST);
+//                 },
+//                 readOnly: true,
+//                 textController: controller.relationship,
+//                 hintText: "Relationship",
+//               ),
+//               ReceiverTextField(
+//                   textController: controller.firstName, hintText: "First Name"),
+//               _buildNoteText(
+//                   "*Pls. enter complete name same with ID.(18 yrs. old below is not allowed)"),
+//               ReceiverTextField(
+//                   textController: controller.middleName,
+//                   hintText: "Middle Name"),
+//               ReceiverTextField(
+//                   textController: controller.lastName, hintText: "Last Name"),
+//               ReceiverTextField(
+//                   textController: controller.contactNumber,
+//                   isNumber: true,
+//                   hintText: "Contact Number"),
+//               Obx(
+//                 () =>
+//                     //child:
+//                     ReceiverTextField(
+//                         ontap: () {
+//                           Get.toNamed(AppRoutes.BANKLIST);
+//                         },
+//                         suffixIcon: controller.bankSuffixIconPath.value,
+//                         readOnly: true,
+//                         textController: controller.bankName,
+//                         hintText: "Bank Name"),
+//               ),
+//               ReceiverTextField(
+//                   textController: controller.accountNumber,
+//                   isNumber: true,
+//                   hintText: "Acc. No."),
+//               ReceiverTextField(
+//                   textController: controller.cityProvince,
+//                   hintText: "City/Provice "),
+//               ReceiverTextField(
+//                   textController: controller.note,
+//                   hintText: "Note (not required) "),
+//             ],
+//           ),
+//         ),
+//       ),
+//       _buildButton(),
+//     ],
+//   );
+// }                       
